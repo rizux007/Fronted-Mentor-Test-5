@@ -1,0 +1,141 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root 
+{
+    /* ### Primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    
+    /* ### Neutral */
+    
+    --very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+    width: 100%;
+    background-color: var(--very-dark-blue-main-BG);
+    color: var(--white);
+    font-family: outfit;
+}
+
+.card
+{   
+    background-color: var(--very-dark-blue-card-BG);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 400px;
+    height: 650px;
+    border-radius: 20px;
+    /* box-shadow: 7px 7px 3px 8px #000; */
+
+}
+
+.card .top
+{
+
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid white; */
+    padding: 30px; 
+    overflow: hidden;
+
+}
+
+.card .top img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.card .bottom
+{
+    border-radius: 10px;
+    height: 50%;
+    width: 100%;
+    padding: 25px;
+}
+
+.card .bottom hr
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: .3;
+}
+
+.card .bottom h2
+{
+    margin-bottom: 8%;
+}
+
+.card .bottom p
+{
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+    margin-bottom: 8%;
+}
+
+.card .bottom .information
+{
+    display: flex;
+   justify-content: space-between;
+}
+
+.card .bottom .message
+{
+    /* border: 2px solid gray; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 8%;
+}
+
+.card .bottom .profil
+{
+
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    margin-top: -10px;
+    /* overflow: hidden; */
+    border-radius: 50%; /* Crée un coin arrondi */
+    border: 2px solid var(--white); /* Ajoute un contour blanc */
+}
+
+.card .bottom .profil img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .bottom .message p
+{
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.card .bottom .message  span
+{
+    font-weight: bold;
+    opacity: 1;
+    color:  var(--white);
+}
